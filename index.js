@@ -1,7 +1,9 @@
 var name1 = "Player1";
 var name2 = "Player2";
-
 $(".start").click(function(){
+    $(".roll").show();
+    $(".turn").show();
+    $(".diceimg").css("opacity","1");
     name1 = prompt("Enter player 1's name : ");
     $(".pl1").text(name1);
 
@@ -35,6 +37,9 @@ $(".start").click(function(){
                     if(c1==9){
                         $(".pl1path").attr("src","images\\path\\pathvictory.png");
                         $(".turn").text(name1+"\ wins!!");
+                        $(".roll").hide();
+                        $(".turn").hide();
+                        $(".diceimg").css("opacity","0.5");
                         return;
                     }
                     $(".pl1path").attr("src","images\\path\\path" + c1 +".png");
@@ -57,6 +62,9 @@ $(".start").click(function(){
                     if(c2==9){
                         $(".pl2path").attr("src","images\\path\\pathvictory.png");
                         $(".turn").text(name2+"\ wins!!");
+                        $(".roll").hide();
+                        $(".turn").hide();
+                        $(".diceimg").css("opacity","0.5");
                         return;
                     }
                     $(".pl2path").attr("src","images\\path\\path" + c2 +".png");
@@ -89,6 +97,9 @@ $(".start").click(function(){
                     if(c1==9){
                         $(".pl1path").attr("src","images\\path\\pathvictory.png");
                         $(".turn").text(name1+"\ wins!!");
+                        $(".roll").hide();
+                        $(".turn").hide();
+                        $(".diceimg").css("opacity","0.5");
                         return;
                     }
                 $(".pl1path").attr("src","images\\path\\path" + c1 +".png");
@@ -104,14 +115,14 @@ $(".start").click(function(){
                     if(c2==9){
                         $(".pl2path").attr("src","images\\path\\pathvictory.png");
                         $(".turn").text(name2+"\ wins!!");
+                        $(".roll").hide();
+                        $(".turn").hide();
+                        $(".diceimg").css("opacity","0.5");
                         return;
                     }
                 $(".pl2path").attr("src","images\\path\\path" + c2 +".png");
             }
             ctr++;
-        }
-        if(c1 == 9 || c2 == 9){
-            return;
         }
     });
 });
