@@ -59,10 +59,10 @@ $(".start").click(function(){
                         $(".turn").text(name2+"\ wins!!");
                         return;
                     }
-                    $(".pl2path").attr("src","images\\path\\path" + c1 +".png");
+                    $(".pl2path").attr("src","images\\path\\path" + c2 +".png");
                     return;
                 }
-                $(".pl2path").attr("src","images\\path\\path" + c1 +".png");
+                $(".pl2path").attr("src","images\\path\\path" + c2 +".png");
                 return;
             }
            // ctr--;
@@ -106,7 +106,7 @@ $(".start").click(function(){
                         $(".turn").text(name2+"\ wins!!");
                         return;
                     }
-                $(".pl2path").attr("src","images\\path\\path" + c1 +".png");
+                $(".pl2path").attr("src","images\\path\\path" + c2 +".png");
             }
             ctr++;
         }
