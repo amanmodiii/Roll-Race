@@ -37,8 +37,11 @@ $(".start").click(function(){
                         $(".turn").text(name1+"\ wins!!");
                         return;
                     }
+                    $(".pl1path").attr("src","images\\path\\path" + c1 +".png");
+                    return;
                 }
                 $(".pl1path").attr("src","images\\path\\path" + c1 +".png");
+                return;
             }
             else if(ctr % 2 == 0){
                 if(c2==-1){
@@ -56,8 +59,11 @@ $(".start").click(function(){
                         $(".turn").text(name2+"\ wins!!");
                         return;
                     }
+                    $(".pl2path").attr("src","images\\path\\path" + c1 +".png");
+                    return;
                 }
                 $(".pl2path").attr("src","images\\path\\path" + c1 +".png");
+                return;
             }
            // ctr--;
         }           //code for when dice rolls six(6)
@@ -69,6 +75,7 @@ $(".start").click(function(){
                 $(".turn").text(name2+"\'s turn");
             }
             if((c1 == -1 && ctr % 2 == 1) || (c2 == -1 && ctr % 2 == 0)){
+                ctr++;
                 return;
             }
             else if(ctr % 2 == 1){
@@ -76,6 +83,7 @@ $(".start").click(function(){
                         c1 += num;
                     }
                     else{
+                        ctr++;
                         return;
                     }
                     if(c1==9){
@@ -90,6 +98,7 @@ $(".start").click(function(){
                         c2 += num;
                     }
                     else{
+                        ctr++;
                         return;
                     }
                     if(c2==9){
