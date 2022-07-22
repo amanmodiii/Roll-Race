@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Race</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top">
+        <div class="top-text">
+            <h1>Roll Race </h1>
+            <hr>
+            <p>This is a simple game played between two players. The player starts when they get a "6" on his dice.
+                Then, their representative (the 🐵) moves forward as many places as the dice shows. The first player to reach the 10-block mark wins.
+            <br> This game is a project created using HTML, CSS and JS. It uses javascript to manipulate the dice and give the results accordingly.
+                Hope you enjoy playing it.😊
+            </p>
+        </div>
+        <img class="top-img" src="images\red-dice.png" alt="display img">
+        <div class="start-game">
+            <h4>To play the game, click here.</h4>
+            <button class="btn start">Begin Game</button>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="playzone">
+            <div id="p1">
+                <h2 class="pl1">Player 1</h2>
+                <img class="pl1path" src="images\path\path-null.png" alt="path img">
+            </div>
+            <div id="p2">
+                <h2 class="pl2">Player 2</h2>
+                <img class="pl2path" src="images\path\path-null.png" alt="path img">
+            </div>
+        </div>
+        <div class="dice">
+            <h2 class="turn">Turn</h2>
+            <img class="diceimg" src="images\dice\dice6.png" />
+            <br>
+            <button class="roll btn">Roll Dice</button>
+        </div>
+    </div>
+    <div class="bottom">
+        <h3>If you liked the project, <br> do show your appreciation here.</h3>
+        <a class="footer-link" href="https://www.linkedin.com/in/amanmodiii/"> LinkedIn </a>
+        <a class="footer-link" href="https://twitter.com/aman_modii"> Twitter </a>
+        <a class="footer-link" href="https://www.facebook.com/amanmodiii9"> Facebook </a>
+        <a class="footer-link" href="https://github.com/amanmodiii"> GitHub </a>
+        <p style="margin-right: 0;">© Aman Modi.</p>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+.top{
+    background-image: url("images/bg.png");
+    color: #F6FBF4;
+    padding: 10px;
+}
+
+h1{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 500%;
+}
+.start-game{
+    align-items: center;
+    text-align: center;
+}
+h4{
+    padding-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 175px;
+    top: 12px;
+}
+.start{
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+.top-text{
+    width: 77%;
+    float: left;
+    margin-left:5px;
+}
+p,ul{
+    opacity: 0.6;
+    margin-right: 150px;
+}
+.top-img{
+    margin-top: 35px;
+    margin-right: 35px;
+    float: right;
+    height: 300px;
+    width: 300px;
+}
+hr{
+    width: 30%;
+    height: 1px;
+}
+.pl1path , .pl2path {
+    width: 1000px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.playzone{
+    margin-top: 20px;
+    float: left;
+}
+.diceimg{
+    margin-bottom: 35px;
+    width: 85%;
+    height: 85%;
+}
+.dice{
+    margin-top: 20px;
+    float: right;
+    align-items: center;
+    text-align: center;
+    margin-right: 100px;
+}
+.main-body{
+    margin-left: 35px;
+    color: #019267;
+    background-color: #FDFFA9;
+}
+.bottom{
+    height: 150px;
+    padding: 50px;
+    background-image: url("images/bg-bottom.png");
+    color: #F6FBF4;
+    text-align: center;
+    margin-top: 35%;
+}
+.footer-link{
+    line-height: 2rem;
+    margin: 15px;
+    font-weight: 650;
+}
+a{
+    color: navajowhite;
+}
+h3{
+    opacity: 0.6;
+}
+.btn {
+    background: #7bd934;
+    background-image: -webkit-linear-gradient(top, #7bd934, #2bb834);
+    background-image: -moz-linear-gradient(top, #7bd934, #2bb834);
+    background-image: -ms-linear-gradient(top, #7bd934, #2bb834);
+    background-image: -o-linear-gradient(top, #7bd934, #2bb834);
+    background-image: linear-gradient(to bottom, #7bd934, #2bb834);
+    border-color: #019267;
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #43fc3c;
+    background-image: -webkit-linear-gradient(top, #43fc3c, #34d937);
+    background-image: -moz-linear-gradient(top, #43fc3c, #34d937);
+    background-image: -ms-linear-gradient(top, #43fc3c, #34d937);
+    background-image: -o-linear-gradient(top, #43fc3c, #34d937);
+    background-image: linear-gradient(to bottom, #43fc3c, #34d937);
+    text-decoration: none;
+}
