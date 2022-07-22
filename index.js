@@ -8,8 +8,8 @@ $(".start").click(function(){
     name2 = prompt("Enter player2's name : ");
     $(".pl2").text(name2);
 
-    $(".pl1path").attr("src","images\\path\\path0.png");
-    $(".pl2path").attr("src","images\\path\\path0.png");
+    $(".pl1path").attr("src","images\\path\\path-1.png");
+    $(".pl2path").attr("src","images\\path\\path-1.png");
     $(".turn").text(name1+"\'s turn");
 
     var ctr=2,c1=-1,c2=-1;
