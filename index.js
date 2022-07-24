@@ -2,7 +2,7 @@ var name1 = "Player1";
 var name2 = "Player2";
 $(".start").click(function(){
     $(".roll").show();
-    $(".turn").show();
+    //$(".turn").show();
     $(".diceimg").css("opacity","1");
     name1 = prompt("Enter player 1's name : ");
     $(".pl1").text(name1);
@@ -38,12 +38,12 @@ $(".start").click(function(){
                         $(".pl1path").attr("src","images\\path\\pathvictory.png");
                         $(".turn").text(name1+"\ wins!!");
                         $(".roll").hide();
-                        $(".turn").hide();
+                      //  $(".turn").hide();
                         $(".diceimg").css("opacity","0.5");
                         return;
                     }
-                    $(".pl1path").attr("src","images\\path\\path" + c1 +".png");
-                    return;
+                   // $(".pl1path").attr("src","images\\path\\path" + c1 +".png");
+                   // return;
                 }
                 $(".pl1path").attr("src","images\\path\\path" + c1 +".png");
                 return;
@@ -63,12 +63,12 @@ $(".start").click(function(){
                         $(".pl2path").attr("src","images\\path\\pathvictory.png");
                         $(".turn").text(name2+"\ wins!!");
                         $(".roll").hide();
-                        $(".turn").hide();
+                       // $(".turn").hide();
                         $(".diceimg").css("opacity","0.5");
                         return;
                     }
-                    $(".pl2path").attr("src","images\\path\\path" + c2 +".png");
-                    return;
+                   // $(".pl2path").attr("src","images\\path\\path" + c2 +".png");
+                   // return;
                 }
                 $(".pl2path").attr("src","images\\path\\path" + c2 +".png");
                 return;
@@ -98,7 +98,7 @@ $(".start").click(function(){
                         $(".pl1path").attr("src","images\\path\\pathvictory.png");
                         $(".turn").text(name1+"\ wins!!");
                         $(".roll").hide();
-                        $(".turn").hide();
+                       // $(".turn").hide();
                         $(".diceimg").css("opacity","0.5");
                         return;
                     }
@@ -116,7 +116,7 @@ $(".start").click(function(){
                         $(".pl2path").attr("src","images\\path\\pathvictory.png");
                         $(".turn").text(name2+"\ wins!!");
                         $(".roll").hide();
-                        $(".turn").hide();
+                      //  $(".turn").hide();
                         $(".diceimg").css("opacity","0.5");
                         return;
                     }
@@ -125,4 +125,7 @@ $(".start").click(function(){
             ctr++;
         }
     });
+    if(c1==9 || c2==9){
+        return;
+    }
 });
