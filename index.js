@@ -1,7 +1,7 @@
 var name1 = "Player1";
 var name2 = "Player2";
 $(".start").click(function(){
-    $(".roll").show();
+    $("#dicebtn").css("visibility","visible");
     //$(".turn").show();
     $(".diceimg").css("opacity","1");
     name1 = prompt("Enter player 1's name : ");
@@ -37,7 +37,7 @@ $(".start").click(function(){
                     if(c1==9){
                         $(".pl1path").attr("src","images\\path\\pathvictory.png");
                         $(".turn").text(name1+"\ wins!!");
-                        $(".roll").hide();
+                        $("#dicebtn").css("visibility","hidden");
                       //  $(".turn").hide();
                         $(".diceimg").css("opacity","0.5");
                         return;
@@ -62,7 +62,7 @@ $(".start").click(function(){
                     if(c2==9){
                         $(".pl2path").attr("src","images\\path\\pathvictory.png");
                         $(".turn").text(name2+"\ wins!!");
-                        $(".roll").hide();
+                        $("#dicebtn").css("visibility","hidden");
                        // $(".turn").hide();
                         $(".diceimg").css("opacity","0.5");
                         return;
